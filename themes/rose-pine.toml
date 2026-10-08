@@ -1,0 +1,16 @@
+# Rosé Pine — NPLAY theme pack
+# Muted rose and pine
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "rose-pine"
+name = "Rosé Pine"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#E0DEF4"
+muted = "#908CAA"
+accent = "#C4A7E7"
+bg = "#191724"
+select_fg = "#191724"
+select_bg = "#EBBCBA"

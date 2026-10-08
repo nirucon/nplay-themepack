@@ -1,0 +1,16 @@
+# Kanagawa Wave — NPLAY theme pack
+# Ink blue, wave cyan and muted gold
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "kanagawa-wave"
+name = "Kanagawa Wave"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#DCD7BA"
+muted = "#727169"
+accent = "#7E9CD8"
+bg = "#1F1F28"
+select_fg = "#1F1F28"
+select_bg = "#7E9CD8"

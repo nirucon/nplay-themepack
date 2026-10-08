@@ -1,0 +1,16 @@
+# Nord — NPLAY theme pack
+# Arctic blue and frost
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "nord"
+name = "Nord"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#ECEFF4"
+muted = "#D8DEE9"
+accent = "#88C0D0"
+bg = "#2E3440"
+select_fg = "#2E3440"
+select_bg = "#88C0D0"

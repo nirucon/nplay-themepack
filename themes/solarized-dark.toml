@@ -1,0 +1,16 @@
+# Solarized Dark — NPLAY theme pack
+# Low-contrast teal and yellow
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "solarized-dark"
+name = "Solarized Dark"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#93A1A1"
+muted = "#657B83"
+accent = "#B58900"
+bg = "#002B36"
+select_fg = "#002B36"
+select_bg = "#2AA198"

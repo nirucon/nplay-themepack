@@ -1,0 +1,16 @@
+# Dracula — NPLAY theme pack
+# Classic violet and pink
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "dracula"
+name = "Dracula"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#F8F8F2"
+muted = "#6272A4"
+accent = "#BD93F9"
+bg = "#282A36"
+select_fg = "#F8F8F2"
+select_bg = "#44475A"

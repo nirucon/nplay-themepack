@@ -1,0 +1,16 @@
+# Tokyo Night — NPLAY theme pack
+# Deep navy with electric blue
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "tokyo-night"
+name = "Tokyo Night"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#C0CAF5"
+muted = "#9AA5CE"
+accent = "#7AA2F7"
+bg = "#1A1B26"
+select_fg = "#1A1B26"
+select_bg = "#7AA2F7"

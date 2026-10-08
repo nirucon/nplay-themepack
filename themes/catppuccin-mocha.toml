@@ -1,0 +1,16 @@
+# Catppuccin Mocha — NPLAY theme pack
+# Catppuccin-inspired warm lavender
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "catppuccin-mocha"
+name = "Catppuccin Mocha"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#CDD6F4"
+muted = "#A6ADC8"
+accent = "#CBA6F7"
+bg = "#1E1E2E"
+select_fg = "#CDD6F4"
+select_bg = "#313244"

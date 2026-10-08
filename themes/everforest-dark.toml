@@ -1,0 +1,16 @@
+# Everforest Dark — NPLAY theme pack
+# Soft forest green and earthy cream
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "everforest-dark"
+name = "Everforest Dark"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#D3C6AA"
+muted = "#859289"
+accent = "#A7C080"
+bg = "#2D353B"
+select_fg = "#2D353B"
+select_bg = "#A7C080"

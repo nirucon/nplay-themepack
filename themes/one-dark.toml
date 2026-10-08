@@ -1,0 +1,16 @@
+# One Dark — NPLAY theme pack
+# Editor-inspired cool blue
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "one-dark"
+name = "One Dark"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#ABB2BF"
+muted = "#7F848E"
+accent = "#61AFEF"
+bg = "#282C34"
+select_fg = "#282C34"
+select_bg = "#61AFEF"

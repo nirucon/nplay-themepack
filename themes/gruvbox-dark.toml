@@ -1,0 +1,16 @@
+# Gruvbox Dark — NPLAY theme pack
+# Warm retro brown and yellow
+# Unofficial color adaptation; not affiliated with original theme authors.
+[theme]
+id = "gruvbox-dark"
+name = "Gruvbox Dark"
+author = "NPLAY Theme Pack contributors"
+version = "1.0"
+
+[colors]
+fg = "#EBDBB2"
+muted = "#A89984"
+accent = "#FABD2F"
+bg = "#282828"
+select_fg = "#282828"
+select_bg = "#FABD2F"
