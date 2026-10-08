@@ -74,3 +74,7 @@ NPLAY currently maps RGB colors to its terminal palette. Exact colors can vary s
 This repository's original scripts and documentation are released under the MIT License. The color palettes are unofficial adaptations of widely recognized themes and remain subject to any applicable upstream rights. The theme names identify the design inspirations, not endorsements.
 
 This is a personal, best-effort project with no guaranteed support.
+
+## Author
+
+Ing Leif Nicklas Rudolfsson
