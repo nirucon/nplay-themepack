@@ -63,18 +63,6 @@ bash uninstall.sh
 
 The uninstaller removes only the pack's ten files **when their contents still match the distributed originals**. Any file you've customized is retained. Your NPLAY configuration and all unrelated custom themes are untouched.
 
-## Development and compatibility
+## Author and license
 
-Each theme defines the six semantic roles supported by NPLAY 1.4.1: `fg`, `muted`, `accent`, `bg`, `select_fg`, `select_bg`. Theme IDs match filenames. These are deliberately simple themes: no executables, dependencies, shell expressions, or NPLAY source patches.
-
-NPLAY currently maps RGB colors to its terminal palette. Exact colors can vary slightly depending on terminal support. These themes were validated against NPLAY's actual 1.4.1 theme loader; terminal screenshots are not supplied as they would depend on the user's terminal configuration.
-
-## License and attribution
-
-This repository's original scripts and documentation are released under the MIT License. The color palettes are unofficial adaptations of widely recognized themes and remain subject to any applicable upstream rights. The theme names identify the design inspirations, not endorsements.
-
-This is a personal, best-effort project with no guaranteed support.
-
-## Author
-
-Ing Leif Nicklas Rudolfsson
+Ing Leif Nicklas Rudolfsson. MIT License; see [LICENSE](LICENSE).
