@@ -1,51 +1,66 @@
 # NPLAY Theme Pack
 
-**10 classic color schemes for NPLAY 1.4.1+** · A separate, unofficial community-style theme collection.
+Ten classic editor and terminal colour schemes for NPLAY.
 
-NPLAY is a personal Linux terminal audio player. This theme pack is independently installable: **it does not modify the NPLAY application, playback, settings, Spotify credentials, or music database.** It contains only declarative `.toml` files, plus a small standard-library Python installer.
+**Status: beta** · Part of the [NIRUX](https://github.com/nirucon/nirux) suite · [MIT License](LICENSE)
 
-## Themes
+## About
 
-| Theme | Character | Accent |
-|---|---|---|
-| Catppuccin Mocha | Soft charcoal, cream and lavender | `#CBA6F7` |
-| Dracula | Dark plum with violet | `#BD93F9` |
-| Gruvbox Dark | Warm vintage brown | `#FABD2F` |
-| Nord | Arctic slate and frost | `#88C0D0` |
-| Tokyo Night | Deep navy and electric blue | `#7AA2F7` |
-| Rosé Pine | Muted plum and rose | `#C4A7E7` |
-| Solarized Dark | Deep teal and muted gold | `#B58900` |
-| One Dark | Neutral editor charcoal | `#61AFEF` |
-| Everforest Dark | Forest green and warm beige | `#A7C080` |
-| Kanagawa Wave | Ink blue and soft periwinkle | `#7E9CD8` |
+A small collection of external themes for
+[NPLAY](https://github.com/nirucon/nplay), my terminal music player. It holds
+only declarative `.toml` theme files and a standard-library Python installer.
+It never modifies NPLAY itself, its playback, settings, Spotify credentials
+or music database.
 
-The palette values are unofficial adaptations inspired by recognizable editor/terminal color schemes. The pack is not affiliated with or endorsed by the original theme maintainers. Colors are used as palette data; no original logos, artwork, or software code are included.
+The palettes are unofficial adaptations inspired by well-known editor and
+terminal colour schemes. The pack is not affiliated with or endorsed by the
+original theme maintainers; only colour values are used, no logos, artwork or
+code. For themes in the NIRUX style, see
+[nplay-themepackniru](https://github.com/nirucon/nplay-themepackniru).
+
+## Features
+
+| Theme | ID | Character | Accent |
+|---|---|---|---|
+| Catppuccin Mocha | `catppuccin-mocha` | Soft charcoal, cream and lavender | `#CBA6F7` |
+| Dracula | `dracula` | Dark plum with violet | `#BD93F9` |
+| Everforest Dark | `everforest-dark` | Forest green and warm beige | `#A7C080` |
+| Gruvbox Dark | `gruvbox-dark` | Warm vintage brown | `#FABD2F` |
+| Kanagawa Wave | `kanagawa-wave` | Ink blue and soft periwinkle | `#7E9CD8` |
+| Nord | `nord` | Arctic slate and frost | `#88C0D0` |
+| One Dark | `one-dark` | Neutral editor charcoal | `#61AFEF` |
+| Rosé Pine | `rose-pine` | Muted plum and rose | `#C4A7E7` |
+| Solarized Dark | `solarized-dark` | Deep teal and muted gold | `#B58900` |
+| Tokyo Night | `tokyo-night` | Deep navy and electric blue | `#7AA2F7` |
 
 ## Requirements
 
-- NPLAY **1.4.1 or later**, with external TOML theme support
-- Python 3.11+ for the pack's installer
-- A terminal with at least 256 colors recommended
+- NPLAY 1.4.1 or later (external TOML theme support).
+- Python 3.11+ for the installer (`tomllib`).
+- A terminal with at least 256 colours is recommended.
 
 ## Installation
 
-From the extracted pack directory:
+The pack is not installed by NIRUX; install it by hand. From a clone or an
+extracted release:
 
 ```sh
 bash install.sh
 ```
 
-The installer checks all ten TOML files before copying them into `${XDG_CONFIG_HOME:-$HOME/.config}/nplay/themes/`. Existing files are **never overwritten**. No root privileges are needed.
+The installer validates all ten files, then copies them to
+`${XDG_CONFIG_HOME:-$HOME/.config}/nplay/themes/`. Existing files are
+**never overwritten**, and a symlinked theme directory is refused. No root
+privileges are needed. You can also copy single files from `themes/` into
+that directory yourself.
 
-Then open NPLAY:
+## Usage
 
-1. Go to **Settings → Appearance → Theme**.
-2. Select **RELOAD CUSTOM THEMES**.
-3. Choose a theme. The selection is saved by NPLAY.
+In NPLAY open **Browse → Settings → Appearance → Theme**, choose
+**RELOAD CUSTOM THEMES**, then pick a theme (or press `t`). NPLAY saves the
+choice.
 
-You can also copy individual `.toml` files from `themes/` into the same directory without using the installer.
-
-## Validation
+To check the files:
 
 ```sh
 python3 manage.py check
@@ -53,16 +68,45 @@ nplay --list-themes
 nplay --check-theme ~/.config/nplay/themes/dracula.toml
 ```
 
-If you use a custom `XDG_CONFIG_HOME`, adjust the final path accordingly.
-
 ## Uninstall
 
 ```sh
 bash uninstall.sh
 ```
 
-The uninstaller removes only the pack's ten files **when their contents still match the distributed originals**. Any file you've customized is retained. Your NPLAY configuration and all unrelated custom themes are untouched.
+This removes the pack's files **only when they still match the distributed
+originals**; anything you customized is kept. NPLAY's configuration and other
+custom themes are untouched.
 
-## Author and license
+## Status, disclaimer and how it's made
 
-Ing Leif Nicklas Rudolfsson. MIT License; see [LICENSE](LICENSE).
+**Status: beta.** The ten themes are complete and validated by the installer; they track NPLAY's theme format, which has been stable since 1.4.1.
+
+NIRUX and every niru* project are made by me, Nicklas Rudolfsson
+([@nirucon](https://github.com/nirucon)), for me. They are tailored to my own
+needs, preferences and workflows, on my own machines. If they fit yours too,
+that's a nice bonus.
+
+- **Free and open source.** Anyone is free to use, study, change and share
+  it under the [MIT License](LICENSE).
+- **No guarantees.** There is no warranty of any kind. Use it at your own
+  risk, read what you install and keep backups of anything that matters.
+- **How it's made.** Some of these projects I built from scratch by hand. In
+  more recent releases I have used Claude, Anthropic's AI, to do much of the
+  heavy lifting under my direction: I decide what to build and how it should
+  behave, and I test it on my own machines. It saves me a lot of time, and
+  the result is quite OK.
+- **Alpha, beta, dev, and maybe forever.** Most things here are alpha, beta
+  or dev, and may stay that way. Maybe one day there will be a real stable
+  release, but given how fast development moves, and how I am as a person,
+  maybe never :)
+
+| Label | Meaning |
+|---|---|
+| dev | Under active construction; may not build, install or work yet. |
+| alpha | Works on my machines, but incomplete or rough; expect breaking changes. |
+| beta | In daily use on my machines and mostly complete; rough edges remain. |
+
+## License
+
+MIT License, see [LICENSE](LICENSE). Copyright (c) 2026 Ing Leif Nicklas Rudolfsson.
